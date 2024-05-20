@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://hxq6ui2esfdn"]
+[gd_scene load_steps=14 format=3 uid="uid://hxq6ui2esfdn"]
 
 [ext_resource type="PackedScene" uid="uid://dbj3lynd4awyq" path="res://scenes/player.tscn" id="1_b3uww"]
 [ext_resource type="Texture2D" uid="uid://cexlgdb0le0ww" path="res://assets/sprites/world_tileset.png" id="2_gt055"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d2y4dy28alw7t" path="res://scenes/coin.tscn" id="4_s02cf"]
 [ext_resource type="PackedScene" uid="uid://c6whpoklqx61f" path="res://scenes/killzone.tscn" id="5_k1li8"]
 [ext_resource type="PackedScene" uid="uid://dvj761o6so8yr" path="res://scenes/silme.tscn" id="6_8mfvk"]
+[ext_resource type="FontFile" uid="uid://cwwlydbrebkj5" path="res://assets/fonts/PixelOperator8.ttf" id="7_5ghi2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qsuhg"]
 texture = ExtResource("2_gt055")
@@ -492,6 +493,9 @@ position = Vector2(56, -57)
 [node name="Coin4" parent="Coins" instance=ExtResource("4_s02cf")]
 position = Vector2(455, 24)
 
+[node name="Coin11" parent="Coins" instance=ExtResource("4_s02cf")]
+position = Vector2(373, 83)
+
 [node name="Coin5" parent="Coins" instance=ExtResource("4_s02cf")]
 position = Vector2(488, 56)
 
@@ -526,3 +530,55 @@ autoplay = "move"
 
 [node name="Silme" parent="." instance=ExtResource("6_8mfvk")]
 position = Vector2(584, 64)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -63.0
+offset_top = 17.0
+offset_right = -16.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.45098, 0.45098, 0.45098, 0.243137)
+theme_override_fonts/font = ExtResource("7_5ghi2")
+theme_override_font_sizes/font_size = 8
+text = "Setas
+ou
+W-A-D"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 325.0
+offset_top = 45.0
+offset_right = 431.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.45098, 0.45098, 0.45098, 0.243137)
+theme_override_fonts/font = ExtResource("7_5ghi2")
+theme_override_font_sizes/font_size = 8
+text = "NAO VOS DEIXES
+CAIR EM TENTACAO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 570.0
+offset_top = 17.0
+offset_right = 676.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.45098, 0.45098, 0.45098, 0.243137)
+theme_override_fonts/font = ExtResource("7_5ghi2")
+theme_override_font_sizes/font_size = 8
+text = "MAS LIVRAI-VOS
+DO MALIGNO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 619.0
+offset_top = -138.0
+offset_right = 677.0
+offset_bottom = -107.0
+theme_override_colors/font_color = Color(0.45098, 0.45098, 0.45098, 0.243137)
+theme_override_fonts/font = ExtResource("7_5ghi2")
+theme_override_font_sizes/font_size = 8
+text = "AMEM!"
+horizontal_alignment = 1
+vertical_alignment = 1
